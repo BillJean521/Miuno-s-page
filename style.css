@@ -81,7 +81,7 @@ main{
     max-width: 1200px;
     color: #fff;
     border-radius: 5px;
-    background-image: url("/img/Bienvenida.jfif");
+    background-image: url("img/Bienvenida.jfif");
     background-size: 100%;
     background-position: 50% 70%;
 }

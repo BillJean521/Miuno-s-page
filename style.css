@@ -1,0 +1,329 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #0f1420;
+    display: flex;
+    flex-direction: column;
+    /* overflow-x: hidden; */
+}
+
+header{
+    margin: 0 ;
+    position: fixed;
+    padding: 8px 0;
+    text-align: center;
+    top:0;
+    width: 100%;
+    background-color: #c55d53;
+}
+
+.titulo{
+    
+    background-color: #fc796d;
+    margin: 0;
+}
+
+.titulo h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav ul li a{
+    color: antiquewhite;
+    padding: 1em 1em;
+    margin: 0;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: #6c2d39;
+}
+
+main{
+    margin-top: 2em;
+    padding-top: 1em;
+
+}
+
+.Bienvenido{
+    margin: 6em auto 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    text-align: center;
+    width: 96%;
+    max-width: 1200px;
+    color: #fff;
+    border-radius: 5px;
+    background-image: url("/img/Bienvenida.jfif");
+    background-size: 100%;
+    background-position: 50% 70%;
+}
+
+.Acerca{
+    margin: 20px auto 0;
+    padding: 1em;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+    background-color: antiquewhite;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.Acerca img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Acerca h2 {
+    color: #b55342;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.Acerca p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 1em;
+    max-width: 600px;
+}
+
+.Experiencias{
+    margin: 0 auto 0;
+    padding: 1em;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 231, 199);
+}
+
+.Experiencias section{
+    margin: auto;
+    padding: 1em;
+    width: 70%;
+    max-width: 900px;
+    text-align: left;
+
+}
+
+.Experiencias h2 {
+    color: #b55342;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.Horario{
+    margin: 0 auto 0;
+    padding: 1em;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 223, 180); 
+    border-radius: 0 0 8px 8px;
+}
+
+.Horario section{
+    margin: auto auto 1em;
+    padding: 1em;
+    width: 70%;
+    max-width: 900px;
+    text-align: left;
+
+}
+
+.Horario section table{
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Horario section table th {
+    background-color: #060606;
+    color: white;
+    padding: 30px;
+}
+
+.Horario section table td {
+    background-color: #eceaea;
+    padding: 30px;
+}
+
+.Formul{
+    margin: 1em auto ;
+    padding: 1em;
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 231, 199); 
+    border-radius: 8px;
+}
+
+button{
+    width: 15em;
+    height: 2em;
+    text-align: center;
+    margin: auto;
+    font-size: medium;
+    background-color: #e66d62;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #b34f46;
+    color: rgb(255, 255, 255);
+}
+
+button a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+ #nav-toggle{
+    display: none;
+} 
+
+footer{
+    text-align: center;
+    background-color: #060606;
+    color: aliceblue;
+    padding: 30px;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul li a {
+        padding: 1em;
+        text-align: center;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    .nav-open ul {
+        display: flex;
+    }
+
+    .Bienvenido, .Acerca, .Experiencias, .Horario, .Formul {
+        margin: 10px auto;
+        padding: 1em;
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+    p, li {
+        font-size: 0.9em;
+    }
+
+    .Acerca img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Bienvenido {
+        background-size: cover;
+        background-position: center;
+        padding: 2em 1em;
+    }
+
+
+    .Horario section table, .Horario section thead, .Horario section tbody, .Horario section th, .Horario section td, .Horario section tr {
+        display: block;
+        width: 100%;
+    }
+
+
+    .Horario section thead {
+        display: none;
+    }
+
+    .Horario section tr {
+        margin-bottom: 1em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .Horario section td {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        text-align: left;
+    }
+
+
+    .Horario section td:first-child {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #333;
+    }
+
+    .Horario section td ul {
+        padding: 0;
+        margin: 0.5em 0;
+        list-style-type: none;
+    }
+
+}
+

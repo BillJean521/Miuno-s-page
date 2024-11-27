@@ -246,7 +246,7 @@ footer ul li a{
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     /*Para la barra de navegación en mobiles*/
     nav ul{

@@ -12,6 +12,7 @@ body{
     /* overflow-x: hidden; */
 }
 
+/*Barra de navegación*/
 header{
     margin: 0 ;
     position: fixed;
@@ -71,6 +72,7 @@ main{
 
 }
 
+/*Container de bienvenida*/
 .Bienvenido{
     margin: 6em auto 1em;
     display: flex;
@@ -86,6 +88,7 @@ main{
     background-position: 50% 70%;
 }
 
+/*Container acerca de mi*/
 .Acerca{
     margin: 20px auto 0;
     padding: 1em;
@@ -121,6 +124,7 @@ main{
     max-width: 600px;
 }
 
+/*Container de experiencias*/
 .Experiencias{
     margin: 0 auto 0;
     padding: 1em;
@@ -147,6 +151,7 @@ main{
     text-align: left;
 }
 
+/*Container de proyectos (Horario) con tablas responsive*/
 .Horario{
     margin: 0 auto 0;
     padding: 1em;
@@ -185,6 +190,7 @@ main{
     padding: 30px;
 }
 
+/*Entrada al formulario*/
 .Formul{
     margin: 1em auto ;
     padding: 1em;
@@ -223,6 +229,7 @@ button a{
     display: none;
 } 
 
+/*Footer */
 footer{
     text-align: center;
     background-color: #060606;
@@ -241,11 +248,12 @@ footer ul li a{
 
 @media (max-width: 768px) {
 
+    /*Para la barra de navegación en mobiles*/
     nav ul{
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #333;
+        background-color: #792a2a;
     }
 
     nav ul li a {
@@ -261,6 +269,7 @@ footer ul li a{
         display: flex;
     }
 
+    /*Responsive para los contenedores*/
     .Bienvenido, .Acerca, .Experiencias, .Horario, .Formul {
         margin: 10px auto;
         padding: 1em;
@@ -285,7 +294,7 @@ footer ul li a{
         padding: 2em 1em;
     }
 
-
+    /*Responsive para las tablas*/
     .Horario section table, .Horario section thead, .Horario section tbody, .Horario section th, .Horario section td, .Horario section tr {
         display: block;
         width: 100%;
